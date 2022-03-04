@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="public/img/iguana.png">
+    <link rel="rain icon" href="public/img/rain.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalango Weather</title>
+
+    <link rel="stylesheet" href="public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="public/css/kalango.css"/>
+
+
+</head>
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Previsão do Tempo</h4>
+            <p class="text-muted">
+                Aplicação web escrita em HTML5, CSS 3 e Javascript que permite buscar, a partir do nome de uma cidade, a previsão do tempo.
+            </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contato</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://twitter.com" class="text-white">Siga-me no Twitter</a></li>
+                <li><a href="mailto:woodyflq@edu.unifor.br" class="text-white">Email</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <img class="kalango-icon" src="public/img/iguana.png"/>
+            <strong>Kalango Weather</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+    </header>
+    <div class="container">   
+    <h1>Previsão do Tempo</h1>
+        <form>
+            <div class="mb-3">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="input-city" aria-describedby="cityHelp"/>
+            </div>
+            <button id="formButton" type="button" class="btn btn-primary">Pesquisar</button>
+        </form>
+
+
+        <img id="rain" src=""/>
+        <div id="result-content" class = "infos"></div>
+
+        
+    </div>
+
+    <script id="rain" src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/kalango.js"></script>
+
+
+
+</body>
+</html>
