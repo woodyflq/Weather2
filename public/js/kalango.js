@@ -2,6 +2,11 @@ let formButton = document.getElementById("formButton");
 let formInputCity = document.getElementById("input-city")
 let resultContent = document.getElementById("result-content")
 
+var today = new Date();
+var date = today.getDate() + "/" + (today.getMonth() + 1) + ",";
+var time = today.getHours() + ":" + today.getMinutes() + "h";
+var dateTime = date +" "+ time;
+
 
 formButton.addEventListener("click", onClickEvent) 
 
@@ -36,8 +41,10 @@ function onClickEvent(event) {
                 
             }
 
-            let html= `<h1>  <b>${cidade}, ${pais}</b></h1>`
-            html += `<h2>${parseInt(temp)}°C</h2>`
+            let html= `<h2 class = "time"> ${dateTime} </h2>`
+            html += `<h1>  <b>${cidade}, ${pais}</b></h1>`
+            html += `<img id="rain" src=""/>`
+            html += `<h2 class = "child">${parseInt(temp)}°C</h2>`
             html += `<h2>Sensação Termica de ${parseInt(feelslike)}°C, ${descricao}</h2>`
             html += `
             <ul>
